@@ -6,6 +6,7 @@ import os
 app = Flask(__name__)
 app.secret_key = "abc"
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
 @app.route("/")
